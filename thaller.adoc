@@ -4,6 +4,8 @@ David Thaller
 :toc:
 
 == Kaufhaus
+
+
 [plantuml, kaufhaus]
 ----
 @startuml
