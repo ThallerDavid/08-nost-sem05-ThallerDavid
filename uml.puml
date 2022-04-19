@@ -1,0 +1,22 @@
+@startuml
+
+class Kaufhaus{
+    kaufhausId: Id
+}
+
+class Produkt{
+    {static}produktID: int
+    angebot: int
+}
+
+class Rechnung{
+    date: DateTime
+    kassaNr: int
+}
+
+Kaufhaus "*" -- "*"Produkt
+
+(Kaufhaus, Produkt) .. Kasse
+
+
+@enduml
