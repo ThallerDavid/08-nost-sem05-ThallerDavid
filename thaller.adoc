@@ -4,9 +4,38 @@ David Thaller
 :toc:
 
 == Kaufhaus
-[plantuml]
+[plantuml, kaufhaus]
 ----
-include::uml.puml[uml]
+@startuml
+
+class Kaufhaus{
+    kaufhausId: Id
+}
+
+class Produkt{
+    {static}produktID: int
+    angebot: int
+}
+
+class Rechnung{
+    datum: DateTime
+    kassaNr: int
+}
+
+class Kauf{
+    {static}kaufNr: int
+    kassaNr: int
+    datum: DateTime
+}
+
+Kaufhaus "*" -- "*"Produkt
+
+Produkt "*" -- "*" Rechnung
+
+(Produkt, Rechnung) ... Kauf
+
+
+@enduml
 ----
 
 == Fragen
