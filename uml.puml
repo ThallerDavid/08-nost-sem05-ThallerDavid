@@ -14,9 +14,13 @@ class Rechnung{
     kassaNr: int
 }
 
+
+
 Kaufhaus "*" -- "*"Produkt
 
-(Kaufhaus, Produkt) .. Kass
+Produkt "*" -- "*" Rechnung
+
+(Produkt, Rechnung) ... Buchung
 
 
 @enduml

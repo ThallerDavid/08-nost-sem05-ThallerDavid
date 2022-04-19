@@ -3,7 +3,7 @@ David Thaller
 :sectnums:
 :toc:
 
-== CLD
+== Kaufhaus
 [plantuml]
 ----
 include::uml.puml[uml]
