@@ -16,7 +16,7 @@ class Rechnung{
 
 Kaufhaus "*" -- "*"Produkt
 
-(Kaufhaus, Produkt) .. Kasse
+(Kaufhaus, Produkt) .. Kass
 
 
 @enduml
